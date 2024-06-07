@@ -1,0 +1,27 @@
+
+*{
+    list-style: none;
+}
+body{
+    background-color: rgb(240, 248, 197);
+}
+
+.user{
+    width: 500px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+
+}
+.list{
+    color: white;
+}
+
+.btn{
+    background-color: rgb(231, 191, 57);
+    color: rgb(10, 8, 4);
+    border: none;
+    padding: 5px 10px;
+}

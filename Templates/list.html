@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+    <title>Users</title>
+</head>
+<body>
+    
+    <ul>
+        <div class="users">
+            <h1>Bütün istifadeçilər</h1>
+            {%for user in users %}
+            <ul class="user">
+                <li><h4>{{user.name}}</h4></li>
+                <li><button class="btn">Pdf qeyd et</button></li>
+            </ul>
+            {%endfor %}</ul>
+        </div>
+</body>
+</html> 
