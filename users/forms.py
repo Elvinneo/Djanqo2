@@ -6,10 +6,11 @@ from .models import Userss
 class UserForm(forms.ModelForm):
     class Meta:
         model=Userss
-        fields=['name','surname','addresstolive','address','specialty','age','hobbies','university']
+        fields=['name','surname','email','addresstolive','address','specialty','age','hobbies','university']
         widgets={
             'name': forms.TextInput(attrs={'class':'form-control'}),
             'surname': forms.TextInput(attrs={'class':'form-control'}),
+            'email': forms.TextInput(attrs={'class':'form-control'}),
             'addresstolive': forms.TextInput(attrs={'class':'form-control'}),
             'address': forms.TextInput(attrs={'class':'form-control'}),
             'specialty': forms.TextInput(attrs={'class':'form-control'}),

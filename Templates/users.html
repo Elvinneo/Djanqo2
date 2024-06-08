@@ -14,10 +14,10 @@
             <h1>Bütün istifadeçilər</h1>
             {%for user in users %}
             <ul class="user">
-                <li><h4>{{user.name}}</h4></li>
-                <li><button class="btn">Pdf qeyd et</button></li>
+                <li><h4>{{user.address}}</h4></li>
+                <a href="{% url 'detail' user.id %}"class="btn">Pdf qeyd et</a>
             </ul>
             {%endfor %}</ul>
         </div>
 </body>
-</html> 
+</html>  

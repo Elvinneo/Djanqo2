@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('surname', models.CharField(max_length=20, verbose_name='Soyad')),
+                ('email', models.CharField(max_length=20, verbose_name='Poct')),
                 ('addresstolive', models.CharField(max_length=20, verbose_name='Yaşadığı ünvan')),
                 ('address', models.CharField(max_length=20, verbose_name='Ünvan')),
                 ('specialty', models.TextField(max_length=50, verbose_name='Ixtisas')),
